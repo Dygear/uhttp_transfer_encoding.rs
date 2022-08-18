@@ -17,10 +17,6 @@
 //! assert_eq!(encs.next(), None);
 //! ```
 
-#![feature(conservative_impl_trait)]
-
-use std::ascii::AsciiExt;
-
 /// Create an iterator over transfer encoding layers from the given string in [the
 /// form](https://tools.ietf.org/html/rfc7230#section-3.3.1) used by the
 /// `Transfer-Encoding` header field.
